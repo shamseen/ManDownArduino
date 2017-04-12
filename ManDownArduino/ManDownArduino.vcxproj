@@ -47,10 +47,10 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Arduino\libraries\Adafruit_nRF8001-master;$(ProjectDir)..\..\..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.18\libraries\SPI\src;$(ProjectDir)..\..\..\..\..\Arduino\libraries\Adafruit_nRF8001-master\utility;$(ProjectDir)..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\bjgs31r1.33a\Micro Platforms\visualmicro\ide\libraries;$(ProjectDir)..\..\..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.18\libraries;$(ProjectDir)..\..\..\..\..\Arduino\libraries;$(ProjectDir)..\..\..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.18\cores\arduino;$(ProjectDir)..\..\..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.18\variants\eightanaloginputs;$(ProjectDir)..\ManDownArduino;$(ProjectDir)..\..\..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.4-arduino2\avr\include\;$(ProjectDir)..\..\..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.4-arduino2\avr\include\avr\;$(ProjectDir)..\..\..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.4-arduino2\lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.ManDownArduino.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;_VMDEBUG=1;F_CPU=16000000L;ARDUINO=10801;ARDUINO_AVR_NANO;ARDUINO_ARCH_AVR;__cplusplus=201103L;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -80,6 +80,9 @@
     <None Include="ManDownArduino.ino">
       <FileType>CppCode</FileType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__vm\.ManDownArduino.vsarduino.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

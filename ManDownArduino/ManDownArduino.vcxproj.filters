@@ -17,5 +17,9 @@
   <ItemGroup>
     <None Include="ManDownArduino.ino" />
   </ItemGroup>
- 
+  <ItemGroup>
+    <ClInclude Include="__vm\.ManDownArduino.vsarduino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
